@@ -1,0 +1,84 @@
+@media screen and (min-width: 1025px) {
+    .feature-box {
+        font-size: 40px;
+        line-height: 46px;
+        justify-content: space-between;
+        grid-template-columns: repeat(3, 315px);        
+        }
+}
+
+@media screen and (min-width: 801px) {
+    .feature-box {
+        justify-content: space-between;
+        grid-template-columns: (1, 315px); 
+        }
+}
+
+.feature-grid {
+    font-family: "Open Sans","lucida grande","Segoe UI",arial,verdana,"lucida sans unicode",tahoma,sans-serif;
+    width: 100%;   
+
+    h2 {
+        font-family: "Grotesk";       
+        font-size: 25px;
+        font-weight: 700;
+        text-align: center;
+        display: block;
+        padding: 72px 0;
+        letter-spacing: 2px;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        line-height: 32px;
+        max-width: 100%;
+    }
+
+    .feature-box {
+        // display: flex;
+        // flex-wrap: wrap;
+        // justify-content: space-between;
+        margin: 0 auto;
+        display: grid;        
+        max-width: 1080px;
+        background-color: #F7F5F1;
+        justify-items: center;
+           
+    }
+
+    .feature {
+        //width: 345.852px;  
+        width: 393.84px;
+        height: 613.1px;         
+        padding: 0 24px 72px;          
+             
+
+        img { background-color: white;                 
+                max-width: 100%;
+                //width: 281.875px;
+                height: auto;           
+            }
+
+            h4 {font-size: 16px;
+                font-weight: 700;
+                display: block;
+                line-height: 20px;
+                margin-block-start: 1.33em;
+                margin-block-end: 1.33em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+            }
+
+            p {font-size: 16px;
+                line-height: 26px;
+            } 
+
+            a {
+                text-decoration: underline;
+            }
+
+            a:hover {
+                text-decoration: unset;
+            }
+    }
+} 
