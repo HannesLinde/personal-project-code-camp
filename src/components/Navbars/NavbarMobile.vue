@@ -63,6 +63,7 @@ export default Vue.extend({
       color: #f9f871;
       border: none;
       z-index: 0;
+      cursor: pointer;
     }
     .mobile-menu-list {
       background-color: #92006c;

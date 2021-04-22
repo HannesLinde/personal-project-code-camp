@@ -5,7 +5,12 @@
       <li><a href="/blog">Blog</a></li>
       <li><a href="/portfolio">Portfolio</a></li>
     </ul>
-    <button class="view-mode-button">
+    <button
+      @click="
+        showDarkTheme = !showDarkTheme;
+        say(showDarkTheme);
+      "
+    >
       <i class="far fa-moon"></i>
     </button>
   </div>
@@ -14,7 +19,18 @@
 <script lang="ts">
 import Vue from "vue";
 
-export default Vue.extend({});
+export default Vue.extend({
+  data() {
+    return {
+      showDarkTheme: false,
+    };
+  },
+  methods: {
+    say(stuff: string | boolean) {
+      console.log(stuff);
+    },
+  },
+});
 </script>
 
 <style scoped lang="scss">
@@ -53,6 +69,8 @@ export default Vue.extend({});
       background-color: #92006c;
       color: #f9f871;
       border: none;
+      z-index: 0;
+      cursor: pointer;
     }
   }
 }
