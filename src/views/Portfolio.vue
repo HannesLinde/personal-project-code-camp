@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h1>Header</h1>
+    <h1>Here comes the portfolio</h1>
+    <img src="../assets/img/arizonauni.png" />
   </div>
 </template>
 
@@ -10,4 +11,5 @@ import Vue from "vue";
 export default Vue.extend({});
 </script>
 
-<style scoped></style>
+<style scoped>
+</style>

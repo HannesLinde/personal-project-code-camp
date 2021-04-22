@@ -1,14 +1,35 @@
-@import "./variables.scss";
-@import "./normalize.scss";
-@import "./base.scss";
-@import "./header.scss";
-@import "./header.mobile.scss";
-@import "./hero.scss";
-@import "./hero.mobile.scss";
-@import "./pricing.scss";
-@import "./pricing.mobile.scss";
-@import "./connect.scss";
-@import "./features.scss";
-@import "./testimonials.scss";
-@import "./trial.scss";
-@import "./faq.scss";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+  html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  }
+
+a {
+  color: #92006c;;
+  text-decoration: none;
+    &:hover{
+      text-decoration: underline #92006c;
+    }
+}
+
+#background {
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  position: fixed;
+  background: linear-gradient(315deg, #92006c 0%, #d2245a 50%, #ffb448 100%);
+}
+
+#component-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.dark-theme {
+  background-color: #121212;
+  color: #d3cec4;
+}
