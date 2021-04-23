@@ -2,7 +2,8 @@
   <div>
     <h1>{{ post.title }}</h1>
     <div class="head-image"><img :src="post.headImage" /></div>
-    <p>{{ post.text }}</p>
+    <div v-html="post.text"></div>
+    <!-- <p>{{ post.text }}</p> -->
     <div class="blog-slider">
       <div class="right-arrow" @click="selectPreviousImage()">
         <i class="fas fa-chevron-right"></i>
@@ -16,12 +17,13 @@
         <i class="fas fa-chevron-left"></i>
       </div>
     </div>
-    <caption>
-      {{
-        post.slideShow[selectedImage].caption
-      }}
-    </caption>
-    <div><img :src="post.headImage" /></div>
+    <div class="caption-container">
+      <caption>
+        {{
+          post.slideShow[selectedImage].caption
+        }}
+      </caption>
+    </div>
   </div>
 </template>
 
@@ -71,6 +73,7 @@ export default Vue.extend({
 }
 .blog-slider {
   margin-top: 1rem;
+  padding: 5px;
   background-color: #121212;
   position: relative;
   display: flex;
@@ -79,12 +82,14 @@ export default Vue.extend({
 }
 
 .right-arrow {
+  color: white;
   position: absolute;
   right: 0px;
   cursor: pointer;
 }
 
 .left-arrow {
+  color: white;
   position: absolute;
   left: 0px;
   cursor: pointer;
@@ -94,10 +99,19 @@ export default Vue.extend({
   margin: 0 auto;
 }
 
+.caption-container {
+  display: flex;
+  justify-content: center;
+}
 caption {
   font-size: 14px;
   color: #ddd;
   width: 300px;
   text-align: center;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 24px;
 }
 </style>
