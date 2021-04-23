@@ -15,12 +15,7 @@
         <li><a href="/portfolio">Portfolio</a></li>
       </ul>
     </div>
-    <button
-      @click="
-        showDarkTheme = !showDarkTheme;
-        say(showDarkTheme);
-      "
-    >
+    <button @click="toggleDarkTheme()">
       <i v-if="showDarkTheme == false" class="far fa-moon"></i>
       <i v-if="showDarkTheme" class="fas fa-rainbow"></i>
     </button>
@@ -40,6 +35,10 @@ export default Vue.extend({
   methods: {
     say(stuff: any) {
       console.log(stuff);
+    },
+    toggleDarkTheme() {
+      this.showDarkTheme = !this.showDarkTheme;
+      this.$emit("darktheme", this.showDarkTheme);
     },
   },
 });
