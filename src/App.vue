@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <div id="background"></div>
-    <Navbar />
+    <div v-bind:class="{ background: showDarkTheme }"></div>
+    <Navbar :showDarkTheme="false" />
     <div id="component-container">
       <router-view />
     </div>
@@ -10,10 +10,20 @@
 <script lang="ts">
 import Vue from "vue";
 import Navbar from "@/components/Navbar.vue";
+
 export default Vue.extend({
   components: {
     Navbar,
-    // About,
+  },
+  data() {
+    return {
+      showDarkTheme: false,
+    };
+  },
+  computed: {
+    showDarktheme() {
+      return this.showDarkTheme;
+    },
   },
 });
 </script>

@@ -22,14 +22,20 @@ a {
   z-index: -1;
   position: fixed;
   background: linear-gradient(315deg, #92006c 0%, #d2245a 50%, #ffb448 100%);
+
 }
 
 #component-container {
+  padding: 15px 5px;
   max-width: 600px;
   margin: 0 auto;
 }
 
 .dark-theme {
-  background-color: #121212;
-  color: #d3cec4;
+  background-color: #121212 !important;
+  color: #d3cec4 !important;
+}
+
+.fa-rainbow {
+  color: linear-gradient(315deg, #92006c 0%, #d2245a 50%, #ffb448 100%);
 }

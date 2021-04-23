@@ -21,7 +21,8 @@
         say(showDarkTheme);
       "
     >
-      <i class="far fa-moon"></i>
+      <i v-if="showDarkTheme == false" class="far fa-moon"></i>
+      <i v-if="showDarkTheme" class="fas fa-rainbow"></i>
     </button>
   </div>
 </template>
