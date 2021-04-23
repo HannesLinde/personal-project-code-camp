@@ -5,12 +5,7 @@
       <li><router-link to="/blog">Blog</router-link></li>
       <li><router-link to="/portfolio">Portfolio</router-link></li>
     </ul>
-    <button
-      @click="
-        showDarkTheme = !showDarkTheme;
-        say(showDarkTheme);
-      "
-    >
+    <button @click="toggleDarkTheme()">
       <i v-if="showDarkTheme == false" class="far fa-moon"></i>
       <i v-if="showDarkTheme" class="fas fa-rainbow"></i>
     </button>
@@ -19,48 +14,21 @@
 
 <script lang="ts">
 import Vue from "vue";
-import VueRouter from "vue-router";
-import About from "@/components/About.vue";
-import Blog from "@/components/Blog.vue";
-import Portfolio from "@/components/Portfolio.vue";
-
-Vue.use(VueRouter);
-
-const routes = [
-  {
-    path: "/",
-    name: "About",
-    component: About,
-  },
-  {
-    path: "/blog",
-    name: "Blog",
-    component: Blog,
-  },
-  {
-    path: "/portfolio",
-    name: "Portfolio",
-    component: Portfolio,
-  },
-];
-
-export const router = new VueRouter({
-  base: "/",
-  mode: "history",
-  routes,
-});
 
 export default Vue.extend({
   methods: {
     say(stuff: string | boolean) {
       console.log(stuff);
     },
-  },
-  props: {
-    showDarkTheme: {
-      type: Boolean,
-      default: false,
+    toggleDarkTheme() {
+      this.showDarkTheme = !this.showDarkTheme;
+      this.$emit("darktheme", this.showDarkTheme);
     },
+  },
+  data() {
+    return {
+      showDarkTheme: false,
+    };
   },
 });
 </script>

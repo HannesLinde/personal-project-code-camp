@@ -1,7 +1,8 @@
 <template>
-  <div id="app">
-    <div v-bind:class="{ background: showDarkTheme }"></div>
-    <Navbar :showDarkTheme="false" />
+  <div id="app" :class="showDarkTheme ? 'dark-theme' : ''">
+    <div class="background"></div>
+    <Navbar @darktheme="showDarkTheme = $event" />
+
     <div id="component-container">
       <router-view />
     </div>
@@ -12,18 +13,18 @@ import Vue from "vue";
 import Navbar from "@/components/Navbar.vue";
 
 export default Vue.extend({
-  components: {
-    Navbar,
-  },
   data() {
     return {
       showDarkTheme: false,
     };
   },
-  computed: {
-    showDarktheme() {
-      return this.showDarkTheme;
+  methods: {
+    say(stuff: string | boolean) {
+      console.log(stuff);
     },
+  },
+  components: {
+    Navbar,
   },
 });
 </script>

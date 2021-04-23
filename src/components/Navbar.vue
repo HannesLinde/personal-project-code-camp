@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NavbarDesktop />
+    <NavbarDesktop @darktheme="$emit('darktheme', $event)" />
     <NavbarMobile />
   </div>
 </template>

@@ -16,7 +16,7 @@ a {
     }
 }
 
-#background {
+.background {
   height: 100vh;
   width: 100vw;
   z-index: -1;
@@ -32,8 +32,9 @@ a {
 }
 
 .dark-theme {
-  background-color: #121212 !important;
-  color: #d3cec4 !important;
+  .background {background: #121212;
+  }
+  color: #d3cec4
 }
 
 .fa-rainbow {

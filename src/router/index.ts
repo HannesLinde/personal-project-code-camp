@@ -3,6 +3,7 @@ import VueRouter, { RouteConfig } from 'vue-router'
 import About from '../views/About.vue';
 import Blog from '../views/Blog.vue';
 import Portfolio from '../views/Portfolio.vue';
+import Blogpost from '../views/Blogpost.vue';
 
 Vue.use(VueRouter)
 
@@ -21,6 +22,11 @@ const routes: Array<RouteConfig> = [
     path: '/portfolio',
     name: 'Portfolio',
     component: Portfolio
+  },
+  {
+    path: '/blog/:index',
+    name: 'Blogpost',
+    component: Blogpost
   }
 ]
 
