@@ -18,6 +18,5 @@ export default Vue.extend({});
 
 <style scoped lang="scss">
 .waiting-spinner {
-  transform: rotateX(360deg);
 }
 </style>

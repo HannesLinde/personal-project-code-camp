@@ -17,7 +17,7 @@ export default Vue.extend({});
 <style scoped lang="scss">
 .footer {
   padding: 5px 0px;
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   width: 100vw;
   background-color: #92006c;
