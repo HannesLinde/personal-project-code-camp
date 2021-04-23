@@ -1,7 +1,12 @@
 <template>
   <div>
-    <h1>Here comes the portfolio</h1>
-    <img src="../assets/img/arizonauni.png" />
+    Portfolio to come soon.
+    <br />
+    <div class="waiting-spinner">
+      <img src="../assets/icons/LoadingSpinner.svg" />
+      <img src="../assets/icons/LoadingSpinner.svg" />
+      <img src="../assets/icons/LoadingSpinner.svg" />
+    </div>
   </div>
 </template>
 
@@ -11,5 +16,8 @@ import Vue from "vue";
 export default Vue.extend({});
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+.waiting-spinner {
+  transform: rotateX(360deg);
+}
 </style>

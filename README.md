@@ -1,24 +1,6 @@
-# dropbox-vue-proto
+# My first single-page-application
 
-## Project setup
-```
-yarn install
-```
+## Build with Vue 2
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Sketched with figma
+[Link](https://www.figma.com/file/e72njhi77NPkaiTFsfoBNi/MySite?node-id=1%3A13)

@@ -29,7 +29,8 @@
 
 <script lang="ts">
 import Vue from "vue";
-import { posts } from "@/views/Blog.vue";
+import { posts as untypedposts } from "@/views/Blog.vue";
+const posts = untypedposts as any;
 
 export default Vue.extend({
   data() {
