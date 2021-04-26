@@ -1,7 +1,16 @@
 {
-  "name": "dropbox-vue-proto",
+  "name": "hannes-website-in-vue",
   "version": "0.1.0",
   "private": true,
+  "description": "Hannes' first ever personal website project; realized in vue.js.",
+  "homepage": "https://hannescodecampsite1.netlify.app/",
+  "keywords": [],
+  "author": "Hannes Lindenberg <hanneslinde@posteo.de>",
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HannesLinde/personal-project-code-camp"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

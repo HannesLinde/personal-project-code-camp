@@ -1,0 +1,23 @@
+.footer {
+  box-sizing: border-box;
+  padding: 5px 10px 10px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  background-color: #92006c;
+  color: #d3cec4;
+  display: flex;
+  justify-content: center;
+
+  a {
+    color: #d3cec4;
+    text-decoration: underline #d3cec4;
+  }
+
+  span {
+    max-width: 600px;
+    text-align: center;
+  }
+}

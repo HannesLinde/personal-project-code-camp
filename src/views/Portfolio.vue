@@ -17,6 +17,5 @@ export default Vue.extend({});
 </script>
 
 <style scoped lang="scss">
-.waiting-spinner {
-}
+@import "../../styles/portfolio.scss";
 </style>

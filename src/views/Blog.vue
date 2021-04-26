@@ -21,6 +21,10 @@ export const posts = [
     headImage: arizonaUni,
     text: `<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse inventore praesentium laudantium voluptatibus ipsa provident impedit saepe eaque. Et temporibus sequi accusamus nemo non minima debitis minus laudantium iste unde.</p>
   <blockquote>Voluptatem, deserunt.</blockquote> <p>Quisquam quas blanditiis pariatur iusto laudantium perspiciatis, ab incidunt ipsam veniam excepturi quibusdam modi distinctio saepe eius, quam aperiam quaerat accusantium. Aliquid, magni dolorum voluptas praesentium repudiandae repellendus.</p>
+  <p>Reiciendis iusto quo aspernatur harum perferendis non fuga, nesciunt, veniam assumenda, ipsam rem optio! Quisquam nobis mollitia in omnis quo, odio autem? Laboriosam quis minus ab animi cupiditate doloremque ea.</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse inventore praesentium laudantium voluptatibus ipsa provident impedit saepe eaque. Et temporibus sequi accusamus nemo non minima debitis minus laudantium iste unde.</p>
+  <blockquote>Voluptatem, deserunt.</blockquote> <p>Quisquam quas blanditiis pariatur iusto laudantium perspiciatis, ab incidunt ipsam veniam excepturi quibusdam modi distinctio saepe eius, quam aperiam quaerat accusantium. Aliquid, magni dolorum voluptas praesentium repudiandae repellendus.</p>
+  <p>Reiciendis iusto quo aspernatur harum perferendis non fuga, nesciunt, veniam assumenda, ipsam rem optio! Quisquam nobis mollitia in omnis quo, odio autem? Laboriosam quis minus ab animi cupiditate doloremque ea.</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse inventore praesentium laudantium voluptatibus ipsa provident impedit saepe eaque. Et temporibus sequi accusamus nemo non minima debitis minus laudantium iste unde.</p>
+  <blockquote>Voluptatem, deserunt.</blockquote> <p>Quisquam quas blanditiis pariatur iusto laudantium perspiciatis, ab incidunt ipsam veniam excepturi quibusdam modi distinctio saepe eius, quam aperiam quaerat accusantium. Aliquid, magni dolorum voluptas praesentium repudiandae repellendus.</p>
   <p>Reiciendis iusto quo aspernatur harum perferendis non fuga, nesciunt, veniam assumenda, ipsam rem optio! Quisquam nobis mollitia in omnis quo, odio autem? Laboriosam quis minus ab animi cupiditate doloremque ea.</p>`,
     slideShow: [
       { img: clearchannel, caption: "This is a logo from clearcello" },
@@ -52,5 +56,7 @@ export default Vue.extend({
 });
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@import "../../styles/blog.scss";
+@import "../../styles/blogpost.scss";
 </style>

@@ -67,52 +67,5 @@ export default Vue.extend({
 </script>
 
 <style scoped lang = "scss">
-.head-image {
-  padding: 10px 0px;
-  display: flex;
-  justify-content: center;
-}
-.blog-slider {
-  margin-top: 1rem;
-  padding: 5px;
-  background-color: #121212;
-  position: relative;
-  display: flex;
-  justify-items: center;
-  align-items: center;
-}
-
-.right-arrow {
-  color: white;
-  position: absolute;
-  right: 0px;
-  cursor: pointer;
-}
-
-.left-arrow {
-  color: white;
-  position: absolute;
-  left: 0px;
-  cursor: pointer;
-}
-
-.slider-image {
-  margin: 0 auto;
-}
-
-.caption-container {
-  display: flex;
-  justify-content: center;
-}
-caption {
-  font-size: 14px;
-  color: #ddd;
-  width: 300px;
-  text-align: center;
-}
-
-blockquote {
-  font-style: italic;
-  font-size: 24px;
-}
+@import "../../styles/blogpost.scss";
 </style>

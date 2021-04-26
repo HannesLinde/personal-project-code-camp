@@ -1,0 +1,107 @@
+@media (min-width: 401px) {
+  .navbar-desktop {
+    text-decoration: overline #92006c;
+    margin: 0 auto;
+    padding: 2rem 0rem;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .routes {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-evenly;
+      li {
+        padding: .2rem 1rem;
+        &:hover {
+          background-color: #92006c;
+          a {
+            color: #f9f871;
+          }
+          transition: all ease-in .5s;
+        }
+      }
+    }
+    button {
+      height: 1rem;
+      width: 2rem;
+      background-color: #121212;
+      color: #d3cec4;
+      border: none;
+      z-index: 0;
+      cursor: pointer;
+    }
+  }
+  .navbar-mobile {
+    display: none;
+  }
+
+  .dark-theme {
+    button {
+      background-color: #92006c;
+      color: #f9f871;
+    }
+    .routes {
+      li {
+        &:hover {
+          background-color: #92006c;
+          a {
+            color: #d3cec4;
+            border-color: #d3cec4;
+            transition: all ease-in .5s;              ;
+          }        
+          }
+      }
+      
+    }
+  }
+}
+
+
+@media (max-width: 400px) {
+  .navbar-desktop {
+    display: none;
+  }
+  .navbar-mobile {
+    text-decoration: underline #92006c;
+    display: flex;
+    justify-content: space-between;
+    button {
+      height: 1rem;
+      width: 2rem;
+      background-color: #92006c;
+      color: #f9f871;
+      border: none;
+      z-index: 0;
+      cursor: pointer;
+    }
+    .mobile-menu-list {
+      background-color: #92006c;
+      a {
+        color: #f9f871;
+      }
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .routes {
+        width: 100vw;
+        flex-direction: column;
+        z-index: 1;
+        li {
+          padding: 0px 2px;
+          &:hover {
+            background-color: #f9f871;
+            a {
+              color: #92006c;
+            }
+          }
+        }
+      }
+      .hamburger {
+        background-color: rgba(146, 0, 108, .2);
+        display: block;
+      }
+    }
+  }
+}

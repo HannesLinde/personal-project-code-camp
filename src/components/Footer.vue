@@ -15,24 +15,5 @@ export default Vue.extend({});
 </script>
 
 <style scoped lang="scss">
-.footer {
-  padding: 5px 0px;
-  position: fixed;
-  bottom: 0px;
-  width: 100vw;
-  background-color: #92006c;
-  color: #d3cec4;
-  display: flex;
-  justify-content: center;
-
-  a {
-    color: #d3cec4;
-    text-decoration: underline #d3cec4;
-  }
-
-  span {
-    max-width: 600px;
-    text-align: center;
-  }
-}
+@import "../../styles/footer.scss";
 </style>
