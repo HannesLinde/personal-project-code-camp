@@ -3,11 +3,23 @@
   padding: 0;
 }
 
-  html {
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  }
+html {
+font-family: "Montserrat", sans-serif;
+font-size: 20px;
+}
 
+body {
+  min-height: 100vh;
+  background: linear-gradient(315deg,#92006c,#d2245a 50%,#ffb448);
+  position:relative;
+
+  .dark-theme {
+    background: #121212;
+    color: #d3cec4;
+    height: 100%
+  }
+}
+  
 a {
   color: rgba(146, 0, 108,1);;
   text-decoration: none;
@@ -19,6 +31,10 @@ a {
     }
 }
 
+i {
+  cursor: pointer;
+}
+@media (min-width: 401px){
 #component-container {
   padding: 15px 1rem;
   max-width: 600px;
@@ -26,27 +42,43 @@ a {
   padding: 0rem 0rem 4rem 0rem;
 
 }
+}
 
 #app {
   padding: 15px 1rem;
 }
 
-body {
-  min-height: 100vh;
-  background: linear-gradient(315deg,#92006c,#d2245a 50%,#ffb448);
-  position:relative;
-  
-  .dark-theme {background: #121212;
-  color: #d3cec4;
-  height: 100%
+.dark-theme {
+
+  a {
+    color:#BB86FC;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    &:hover{
+      border-color: #BB86FC;
+      transition: border-bottom ease-in .5s;
+      }
   }
+  .routes {
+    a:hover {
+      border-color: #121212;
+    
+  }
+}
 }
 
 .fa-rainbow {
   background-color: linear-gradient(315deg, #92006c 0%, #d2245a 50%, #ffb448 100%);
 }
 
-.fa-moon {
-  color: #d3cec4;
-  background-color: #121212;
+
+
+@media (max-width: 400px) {
+  body {
+    font-size: 0.8rem;
+  }
+
+  #component-container {
+    padding: 1rem;
+  }
 }

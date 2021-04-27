@@ -32,10 +32,4 @@ export default Vue.extend({
 </script>
 <style lang="scss">
 @import "../styles/index.scss";
-#component-container {
-  padding: 15px 1rem;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 0rem 0rem 4rem 0rem;
-}
 </style>
