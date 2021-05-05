@@ -1,10 +1,11 @@
 {
   "posts": [
     {
+      "index": "0",
       "title": "my first blog entry",
       "headImage": "arizonaUni",
       "text": "<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse inventore praesentium laudantium voluptatibus ipsa provident impedit saepe eaque. Et temporibus sequi accusamus nemo non minima debitis minus laudantium iste unde.</p> <blockquote>Voluptatem, deserunt.</blockquote> <p>Quisquam quas blanditiis pariatur iusto laudantium perspiciatis, ab incidunt ipsam veniam excepturi quibusdam modi distinctio saepe eius, quam aperiam quaerat accusantium. Aliquid, magni dolorum voluptas praesentium repudiandae repellendus.</p> <p>Reiciendis iusto quo aspernatur harum perferendis non fuga, nesciunt, veniam assumenda, ipsam rem optio! Quisquam nobis mollitia in omnis quo, odio autem? Laboriosam quis minus ab animi cupiditate doloremque ea.</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse inventore praesentium laudantium voluptatibus ipsa provident impedit saepe eaque. Et temporibus sequi accusamus nemo non minima debitis minus laudantium iste unde.</p><blockquote>Voluptatem, deserunt.</blockquote> <p>Quisquam quas blanditiis pariatur iusto laudantium perspiciatis, ab incidunt ipsam veniam excepturi quibusdam modi distinctio saepe eius, quam aperiam quaerat accusantium. Aliquid, magni dolorum voluptas praesentium repudiandae repellendus.</p><p>Reiciendis iusto quo aspernatur harum perferendis non fuga, nesciunt, veniam assumenda, ipsam rem optio! Quisquam nobis mollitia in omnis quo, odio autem? Laboriosam quis minus ab animi cupiditate doloremque ea.</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse inventore praesentium laudantium voluptatibus ipsa provident impedit saepe eaque. Et temporibus sequi accusamus nemo non minima debitis minus laudantium iste unde.</p><blockquote>Voluptatem, deserunt.</blockquote> <p>Quisquam quas blanditiis pariatur iusto laudantium perspiciatis, ab incidunt ipsam veniam excepturi quibusdam modi distinctio saepe eius, quam aperiam quaerat accusantium. Aliquid, magni dolorum voluptas praesentium repudiandae repellendus.</p><p>Reiciendis iusto quo aspernatur harum perferendis non fuga, nesciunt, veniam assumenda, ipsam rem optio! Quisquam nobis mollitia in omnis quo, odio autem? Labor quis minus ab animi cupiditate doloremque ea.</p>",
-      "slideShow": [
+      "slideshow": [
         {
           "img": "clearchannel",
           "caption": "This is a logo from clearcello"
@@ -24,11 +25,18 @@
       ]
     },
     {
+      "index": "1",
       "title": "my second blog Ddventure",
       "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse inventore praesentium laudantium voluptatibus ipsa provident impedit saepe eaque. Et sequi accusamus nemo non minima debitis minus laudantium iste unde. Voluptatem, deserunt. Quisquam quas blanditiis pariatur iusto laudantium perspiciatis, ab incidunt ipsam veniam excepturi quibusdam modi distinctio saepe eius, quam aperiam quaerat accusantium. Aliquid, magni dolorum voluptas praesentium repudiandae repellendus. Reiciendis iusto quo aspernatur harum perferendis non fuga, nesciunt, veniam assumenda, ipsam rem optio! Quisquam nobis mollitia in omnis quo, odio autem? Laboriosam quis minus ab animi cupiditate doloremque ea."
     },
     {
+      "index": "2",
       "title": "my thirs blog blackout",
+      "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse inventore praesentium laudantium voluptatibus ipsa provident impedit saepe eaque. Et temporibus sequi accusamus nemo non minima debitis minus laudantium iste unde. Voluptatem, deserunt. Quisquam quas blanditiis pariatur iusto laudantium perspiciatis, ab incidunt ipsam veniam excepturi quibusdam modi distinctio saepe eius, quam aperiam quaerat accusantium. Aliquid, magni dolorum voluptas praesentium repudiandae repellendus.Reiciendis iusto quo aspernatur harum perferendis non fuga, nesciunt, veniam assumenda, ipsam rem optio! Quisquam nobis mollitia in omnis quo, odio autem? Laboriosam uis minus ab animi cupiditate doloremque ea."
+    },
+    {
+      "index": "3",
+      "title": "my fourth blog blackout",
       "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse inventore praesentium laudantium voluptatibus ipsa provident impedit saepe eaque. Et temporibus sequi accusamus nemo non minima debitis minus laudantium iste unde. Voluptatem, deserunt. Quisquam quas blanditiis pariatur iusto laudantium perspiciatis, ab incidunt ipsam veniam excepturi quibusdam modi distinctio saepe eius, quam aperiam quaerat accusantium. Aliquid, magni dolorum voluptas praesentium repudiandae repellendus.Reiciendis iusto quo aspernatur harum perferendis non fuga, nesciunt, veniam assumenda, ipsam rem optio! Quisquam nobis mollitia in omnis quo, odio autem? Laboriosam uis minus ab animi cupiditate doloremque ea."
     }
   ]
