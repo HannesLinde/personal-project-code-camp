@@ -9,7 +9,10 @@
 
 <script lang="ts">
 import Vue from "vue";
-import arizonaUni from "../assets/img/arizonauni.png";
+import axios from "axios";
+
+
+/* import arizonaUni from "../assets/img/arizonauni.png";
 import clearchannel from "../assets/img/clearchannel.png";
 import designit from "../assets/img/designit.png";
 import uniflorida from "../assets/img/uniflorida.png";
@@ -45,14 +48,22 @@ export const posts = [
   Voluptatem, deserunt. Quisquam quas blanditiis pariatur iusto laudantium perspiciatis, ab incidunt ipsam veniam excepturi quibusdam modi distinctio saepe eius, quam aperiam quaerat accusantium. Aliquid, magni dolorum voluptas praesentium repudiandae repellendus.
   Reiciendis iusto quo aspernatur harum perferendis non fuga, nesciunt, veniam assumenda, ipsam rem optio! Quisquam nobis mollitia in omnis quo, odio autem? Laboriosam quis minus ab animi cupiditate doloremque ea.`,
   },
-];
+]; */
 
 export default Vue.extend({
   data() {
     return {
-      posts,
+      posts: [],
     };
   },
+  async mounted() {
+    try {
+      const blogPosts = await axios.get("http://localhost:3000/posts");
+      this.posts = blogPosts.data;
+      console.log(this.posts)
+
+    }
+  }
 });
 </script>
 
